@@ -1,0 +1,59 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #000;
+  color: #fff;
+  overflow: hidden;
+}
+.overlay {
+  background: url('https://media.tenor.com/NkgUGGzjQysAAAPo/hearts-love.gif') center center/cover no-repeat;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  z-index: -1;
+}
+.content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  width: 100%;
+  padding: 0 20px;
+}
+h1 {
+  font-size: 2.5em;
+  color: #ff69b4;
+  animation: fadeIn 2s ease-in-out;
+}
+p {
+  font-size: 1.2em;
+  margin-top: 20px;
+  animation: slideIn 3s ease-in-out;
+}
+.love-note {
+  font-size: 1em;
+  max-width: 500px;
+  margin: 30px auto;
+  line-height: 1.6;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+.from {
+  margin-top: 30px;
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@keyframes slideIn {
+  from {transform: translateY(30px); opacity: 0;}
+  to {transform: translateY(0); opacity: 1;}
+}
